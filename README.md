@@ -1,2 +1,0 @@
-# PIMVIII
-Trabalho da faculdade 

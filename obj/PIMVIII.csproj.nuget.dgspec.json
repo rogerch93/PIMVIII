@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "/home/roger/Desktop/Projetos/PIMVIII/PopularPimViii.csproj": {}
+    "/home/roger/Desktop/Projetos/PIMVIII/PIMVIII.csproj": {}
   },
   "projects": {
-    "/home/roger/Desktop/Projetos/PIMVIII/PopularPimViii.csproj": {
+    "/home/roger/Desktop/Projetos/PIMVIII/PIMVIII.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/roger/Desktop/Projetos/PIMVIII/PopularPimViii.csproj",
-        "projectName": "PopularPimViii",
-        "projectPath": "/home/roger/Desktop/Projetos/PIMVIII/PopularPimViii.csproj",
+        "projectUniqueName": "/home/roger/Desktop/Projetos/PIMVIII/PIMVIII.csproj",
+        "projectName": "PIMVIII",
+        "projectPath": "/home/roger/Desktop/Projetos/PIMVIII/PIMVIII.csproj",
         "packagesPath": "/home/roger/.nuget/packages/",
         "outputPath": "/home/roger/Desktop/Projetos/PIMVIII/obj/",
         "projectStyle": "PackageReference",

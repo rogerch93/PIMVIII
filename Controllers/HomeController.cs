@@ -1,8 +1,8 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using PopularPimViii.Models;
+using PIMVIII.Models;
 
-namespace PimViii.Controllers;
+namespace PIMVIII.Controllers;
 
 public class HomeController : Controller
 {

@@ -1,5 +1,5 @@
 {
-  "FilePath": "/home/roger/Desktop/Projetos/PIMVIII/PopularPimViii.csproj",
+  "FilePath": "/home/roger/Desktop/Projetos/PIMVIII/PIMVIII.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "6.0",
@@ -16295,7 +16295,7 @@
     ],
     "CSharpLanguageVersion": 1000
   },
-  "RootNamespace": "PopularPimViii",
+  "RootNamespace": "PIMVIII",
   "Documents": [
     {
       "FilePath": "/home/roger/Desktop/Projetos/PIMVIII/Views/Shared/_Layout.cshtml",
@@ -16305,11 +16305,6 @@
     {
       "FilePath": "/home/roger/Desktop/Projetos/PIMVIII/Views/_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/roger/Desktop/Projetos/PIMVIII/Views/HelloWorld/index.cshtml",
-      "TargetPath": "Views\\HelloWorld\\index.cshtml",
       "FileKind": "mvc"
     },
     {

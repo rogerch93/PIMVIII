@@ -1,4 +1,4 @@
-namespace PopularPimViii.Models;
+namespace PIMVIII.Models;
 
 public class ErrorViewModel
 {
