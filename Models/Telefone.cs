@@ -1,11 +1,19 @@
-namespace PIMVIII.Models
-{
-    public class Telefone
-    {
-        public int Id { get; set; }
-        public int Numero { get; set; }
-        public int Ddd { get; set; }
+﻿using System.ComponentModel.DataAnnotations;
 
-        public List<TipoTelefone> Tipo { get; set; }
+namespace PimViii.Models
+{
+    public class Telefone 
+    {
+        public int TelefoneId { get; set; }
+
+        [Required(ErrorMessage ="Preencha todos os campos")]
+        public int Numero { get; set; }
+
+        [Required(ErrorMessage = "Preencha todos os campos")]
+        public int DDD { get; set; }
+
+        public int TipoTelefoneId { get; set; }
+        public TipoTelefone TipoTelefones { get; set; }
+
     }
 }
