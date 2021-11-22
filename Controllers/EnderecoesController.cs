@@ -22,6 +22,7 @@ namespace PimViii.Controllers
         // GET: Enderecoes
         public async Task<IActionResult> Index(string id)
         {
+            //Criando Busca de Id
             var endereco = from e in _context.Endereco
                            select e;
             if (!String.IsNullOrEmpty(id))
