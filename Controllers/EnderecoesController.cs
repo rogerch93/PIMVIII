@@ -20,14 +20,14 @@ namespace PimViii.Controllers
         }
 
         // GET: Enderecoes
-        public async Task<IActionResult> Index(string id)
+        public async Task<IActionResult> Index(string searchString)
         {
             //Criando Busca de Id
             var endereco = from e in _context.Endereco
                            select e;
-            if (!String.IsNullOrEmpty(id))
+            if (!String.IsNullOrEmpty(searchString))
             {
-                endereco = endereco.Where(s => s.Cidade.Contains(id));
+                endereco = endereco.Where(s => s.Cidade.Contains(searchString));
             }
             return View(await endereco.ToListAsync());
         }

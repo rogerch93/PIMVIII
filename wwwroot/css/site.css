@@ -18,6 +18,22 @@ a {
   border-color: #1861ac;
 }
 
+/* Styles-table
+-------------------------------------------------- */
+thead tr th {
+    padding-left: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+tbody tr td {
+    padding-left: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+.table thead th {
+    vertical-align: baseline
+}
+
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   color: #fff;
   background-color: #1b6ec2;
