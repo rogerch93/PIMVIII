@@ -17,7 +17,5 @@ namespace PimViii.Models
         public Endereco Enderecos { get; set; }
 
         public virtual List<Telefone> Telefones{ get; set; }
-
-       
     }
 }

@@ -13,6 +13,8 @@ namespace PimViii.Models
         public int DDD { get; set; }
 
         public int TipoTelefoneId { get; set; }
+
+        [Display(Name = "Tipo de Telefone")]
         public TipoTelefone TipoTelefones { get; set; }
 
     }
