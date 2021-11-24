@@ -14,9 +14,9 @@ namespace PimViii.Data
         {
         }
 
-        public DbSet<PimViii.Models.Pessoa> Pessoa { get; set; }
-
         public DbSet<PimViii.Models.Endereco> Endereco { get; set; }
+
+        public DbSet<PimViii.Models.Pessoa> Pessoa { get; set; }
 
         public DbSet<PimViii.Models.Telefone> Telefone { get; set; }
 

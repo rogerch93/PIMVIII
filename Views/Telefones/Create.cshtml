@@ -4,7 +4,7 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Adicionar Novo Item a Lista</h1>
+<h1>Create</h1>
 
 <h4>Telefone</h4>
 <hr />
@@ -27,14 +27,14 @@
                 <select asp-for="TipoTelefoneId" class ="form-control" asp-items="ViewBag.TipoTelefoneId"></select>
             </div>
             <div class="form-group">
-                <input type="submit" value="Criar" class="btn btn-primary" />
+                <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Voltar a lista</a>
+    <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {

@@ -16,6 +16,8 @@ using PimViii.Data;
 
 
 
+
+
 namespace PimViii
 {
     public class Startup
@@ -35,11 +37,6 @@ namespace PimViii
             services.AddDbContext<PimViiiContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("PimViiiContext")));
 
-        
-
-           
-
-       
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

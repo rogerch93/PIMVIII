@@ -40,6 +40,10 @@ tbody tr td {
   border-color: #1861ac;
 }
 
+tbody tr td .Icon{
+    padding: 10px;
+}
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {

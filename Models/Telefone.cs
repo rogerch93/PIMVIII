@@ -12,6 +12,7 @@ namespace PimViii.Models
         [Required(ErrorMessage = "Preencha todos os campos")]
         public int DDD { get; set; }
 
+        [Display(Name ="Tipo de Telefone")]
         public int TipoTelefoneId { get; set; }
 
         [Display(Name = "Tipo de Telefone")]

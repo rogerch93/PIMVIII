@@ -28,5 +28,10 @@ namespace PimViii.Models
         [Required(ErrorMessage = "Por favor preencha o campo 'Estado'")]
         [StringLength(20)]
         public string Estado { get; set; }
+
+        [Display(Name ="Usuario Cadastrado")]
+        public int PessoaId { get; set; }
+
+        public Pessoa Pessoa { get; set; }    
     }
 }

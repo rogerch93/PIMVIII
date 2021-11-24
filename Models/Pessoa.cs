@@ -14,7 +14,7 @@ namespace PimViii.Models
 
         public long Cpf { get; set; }
 
-        public Endereco Enderecos { get; set; }
+        public virtual List<Endereco> Enderecos{ get; set; }
 
         public virtual List<Telefone> Telefones{ get; set; }
     }

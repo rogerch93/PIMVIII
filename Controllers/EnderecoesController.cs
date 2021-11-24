@@ -20,16 +20,10 @@ namespace PimViii.Controllers
         }
 
         // GET: Enderecoes
-        public async Task<IActionResult> Index(string searchString)
+        public async Task<IActionResult> Index()
         {
-            //Criando Busca de Id
-            var endereco = from e in _context.Endereco
-                           select e;
-            if (!String.IsNullOrEmpty(searchString))
-            {
-                endereco = endereco.Where(s => s.Cidade.Contains(searchString));
-            }
-            return View(await endereco.ToListAsync());
+            var pimViiiContext = _context.Endereco.Include(e => e.Pessoa);
+            return View(await pimViiiContext.ToListAsync());
         }
 
         // GET: Enderecoes/Details/5
@@ -41,6 +35,7 @@ namespace PimViii.Controllers
             }
 
             var endereco = await _context.Endereco
+                .Include(e => e.Pessoa)
                 .FirstOrDefaultAsync(m => m.EnderecoId == id);
             if (endereco == null)
             {
@@ -53,6 +48,7 @@ namespace PimViii.Controllers
         // GET: Enderecoes/Create
         public IActionResult Create()
         {
+            ViewData["PessoaId"] = new SelectList(_context.Pessoa, "PessoaId", "NomePessoa");
             return View();
         }
 
@@ -61,7 +57,7 @@ namespace PimViii.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("EnderecoId,Logradouro,Numero,Cep,Bairro,Cidade,Estado")] Endereco endereco)
+        public async Task<IActionResult> Create([Bind("EnderecoId,Logradouro,Numero,Cep,Bairro,Cidade,Estado,PessoaId")] Endereco endereco)
         {
             if (ModelState.IsValid)
             {
@@ -69,6 +65,7 @@ namespace PimViii.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["PessoaId"] = new SelectList(_context.Pessoa, "PessoaId", "NomePessoa", endereco.PessoaId);
             return View(endereco);
         }
 
@@ -85,6 +82,7 @@ namespace PimViii.Controllers
             {
                 return NotFound();
             }
+            ViewData["PessoaId"] = new SelectList(_context.Pessoa, "PessoaId", "NomePessoa", endereco.PessoaId);
             return View(endereco);
         }
 
@@ -93,7 +91,7 @@ namespace PimViii.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("EnderecoId,Logradouro,Numero,Cep,Bairro,Cidade,Estado")] Endereco endereco)
+        public async Task<IActionResult> Edit(int id, [Bind("EnderecoId,Logradouro,Numero,Cep,Bairro,Cidade,Estado,PessoaId")] Endereco endereco)
         {
             if (id != endereco.EnderecoId)
             {
@@ -120,6 +118,7 @@ namespace PimViii.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["PessoaId"] = new SelectList(_context.Pessoa, "PessoaId", "NomePessoa", endereco.PessoaId);
             return View(endereco);
         }
 
@@ -132,6 +131,7 @@ namespace PimViii.Controllers
             }
 
             var endereco = await _context.Endereco
+                .Include(e => e.Pessoa)
                 .FirstOrDefaultAsync(m => m.EnderecoId == id);
             if (endereco == null)
             {

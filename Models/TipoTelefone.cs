@@ -1,9 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace PimViii.Models
 {
     public class TipoTelefone
-    {
+    {   
+        [Display(Name ="Tipo de Telefone")]
         public int TipoTelefoneId { get; set; }
         
         [Display(Name = "Tipo de Telefone")]
@@ -16,5 +18,9 @@ namespace PimViii.Models
 
         public virtual Pessoa Pessoa { get; set; }
 
+        public static implicit operator TipoTelefone(string v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
