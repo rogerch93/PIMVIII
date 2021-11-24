@@ -3,33 +3,38 @@
     margin-right: 2rem;
 }
 
+.grid{
+    display:grid;
+    gap:2rem;
+}
+
 .info{
     padding: 2rem;
 }
 
 .info p{
-    padding: 2rem;
+    margin-top: 1rem;
 }
 
 .image1 img {
+    margin-top: 2rem;
     box-shadow: 60px -16px rgb(208 208 208);
     border-radius: 10px;
 }
 
 .solid{
-    border-top: 1px solid #808080
+    border-top: 1px solid #808080;
+    margin-bottom: 4rem;
 }
 
 h4 {
     padding: 2rem;
 }
 
-#image2 .img-agile {
-    box-shadow: 60px -16px rgb(208 208 208);
-    border-radius: 10px;
-}
-
 .img-agile {
-    height: 25rem;
-    width: 50%;
+    height: auto;
+    width: 80%;
+    box-shadow: 25px -10px rgb(208 208 208);
+    border-radius: 10px;
+    margin-left:1rem;
 }
