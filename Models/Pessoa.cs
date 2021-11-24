@@ -12,9 +12,10 @@ namespace PimViii.Models
         [StringLength(256)]
         public string NomePessoa { get; set; }
 
+        [Required(ErrorMessage = "Por favor preencha o campo 'CPF' ")]
         public long Cpf { get; set; }
 
-        public virtual List<Endereco> Enderecos{ get; set; }
+        public virtual Endereco Endereco { get; set; }
 
         public virtual List<Telefone> Telefones{ get; set; }
     }

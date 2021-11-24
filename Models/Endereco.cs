@@ -29,9 +29,9 @@ namespace PimViii.Models
         [StringLength(20)]
         public string Estado { get; set; }
 
-        [Display(Name ="Usuario Cadastrado")]
+        [Display(Name = "Usuario Cadastrado")]
         public int PessoaId { get; set; }
 
-        public Pessoa Pessoa { get; set; }    
+        public Pessoa Pessoa { get; set; }
     }
 }

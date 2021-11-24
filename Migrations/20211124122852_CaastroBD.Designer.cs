@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PimViii.Data;
 
 namespace PimViii.Migrations
 {
     [DbContext(typeof(PimViiiContext))]
-    partial class PimViiiContextModelSnapshot : ModelSnapshot
+    [Migration("20211124122852_CaastroBD")]
+    partial class CaastroBD
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
