@@ -17,9 +17,11 @@
 }
 
 .image1 img {
+
     margin-top: 2rem;
-    box-shadow: 60px -16px rgb(208 208 208);
+    box-shadow: 25px -16px rgb(208 208 208);
     border-radius: 10px;
+    width: 75%;
 }
 
 .solid{
@@ -28,13 +30,18 @@
 }
 
 h4 {
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .img-agile {
-    height: auto;
+    height: 10rem;
     width: 80%;
     box-shadow: 25px -10px rgb(208 208 208);
     border-radius: 10px;
     margin-left:1rem;
+    margin-bottom: 1rem;
+}
+
+p .text-info{
+    margin-top: 1rem;
 }
