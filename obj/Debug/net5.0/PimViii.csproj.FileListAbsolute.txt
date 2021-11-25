@@ -13,7 +13,6 @@ C:\Users\roger.DESKTOP-FT9COCG\Desktop\PimViii\obj\Debug\net5.0\PimViii.TagHelpe
 C:\Users\roger.DESKTOP-FT9COCG\Desktop\PimViii\obj\Debug\net5.0\PimViii.TagHelpers.output.cache
 C:\Users\roger.DESKTOP-FT9COCG\Desktop\PimViii\obj\Debug\net5.0\PimViii.RazorCoreGenerate.cache
 C:\Users\roger.DESKTOP-FT9COCG\Desktop\PimViii\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\roger.DESKTOP-FT9COCG\Desktop\PimViii\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\roger.DESKTOP-FT9COCG\Desktop\PimViii\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\roger.DESKTOP-FT9COCG\Desktop\PimViii\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\roger.DESKTOP-FT9COCG\Desktop\PimViii\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs

@@ -20,9 +20,16 @@ namespace PimViii.Controllers
         }
 
         // GET: Pessoas
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            return View(await _context.Pessoa.ToListAsync());
+            var pessoa = from p in _context.Pessoa
+                         select p;
+            if(!String.IsNullOrEmpty(searchString))
+            {
+                pessoa = pessoa.Where(s => s.NomePessoa.Contains(searchString));
+            }
+
+            return View(await pessoa.ToListAsync());
         }
 
         // GET: Pessoas/Details/5
